@@ -89,7 +89,7 @@ library(conicas)
     #> 10    -5     3    -3     4    -3 hipérbole -5x^2+3y^2-3x+4y-3 = 0
     ```
 
-    Se quiser que as mesmas cônicas sejam sempre retornadas, por esta
+    Se quiser que as mesmas cônicas sejam sempre retornadas por esta
     chamada, use um valor específico para `seed`, como acima.
 
 -   Para formatar a lista de equações:
@@ -101,6 +101,9 @@ library(conicas)
 
     Se quiser incluir as equações em um documento RMarkdown, use a opção
     `results = 'asis'` no *chunk* acima.
+
+-   Veja a documentação da função `gerar_lista` para outras opções de
+    formatação (sem numeração, sem LaTeX, com outros separadores).
 
 -   Eis um exemplo de uma lista de exercícios gerada com este pacote.
     Clique na imagem para visitar o site:

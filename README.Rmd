@@ -19,6 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 **conicas** é um pacote em R para gerar equações de cônicas com eixos paralelos aos eixos cartesianos, na forma geral:
+
 $$
 Ax^2 + Cy^2 + Dx + Ey + F = 0
 $$

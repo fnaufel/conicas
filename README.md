@@ -8,6 +8,7 @@
 
 **conicas** é um pacote em R para gerar equações de cônicas com eixos
 paralelos aos eixos cartesianos, na forma geral:
+
 *A**x*<sup>2</sup> + *C**y*<sup>2</sup> + *D**x* + *E**y* + *F* = 0
 
 Eu o desenvolvi para me ajudar a criar listas de exercícios de Geometria

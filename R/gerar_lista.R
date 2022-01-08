@@ -7,6 +7,7 @@
 #'
 #' @return String com a lista de equações
 #' @export
+#' @importFrom glue glue_data
 #'
 gerar_lista <- function(df, num = TRUE, tex = TRUE, sep = '\n\n') {
 

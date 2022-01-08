@@ -7,6 +7,8 @@
 #' @param F Coeficiente
 #'
 #' @return String com a equação
+#' @importFrom glue glue
+#' @importFrom stringr str_replace_all str_replace
 #'
 gerar_equacao <- function(A, C, D, E, F) {
 

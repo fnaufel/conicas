@@ -7,8 +7,8 @@
 filtrar_conicas(
   conicas,
   n = 48,
-  tipos = c(elipse = n/6, hipérbole = n/6, parábola = n/6, paralelas = n/4,
-    concorrentes = n/4),
+  tipos = c(elipse = ceiling(n/6), hipérbole = ceiling(n/6), parábola = ceiling(n/6),
+    paralelas = ceiling(n/4), concorrentes = ceiling(n/4)),
   seed = NULL
 )
 }

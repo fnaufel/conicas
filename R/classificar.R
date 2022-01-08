@@ -3,6 +3,8 @@
 #' @param coefs Tibble com 5 colunas: `A`, `C`, `D`, `E`, `F`
 #'
 #' @return Tibble original, com coluna `tipo` adicionada
+
+#' @importFrom dplyr mutate rowwise summarise select
 #'
 classificar <- function(coefs) {
 

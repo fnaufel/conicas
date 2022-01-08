@@ -6,17 +6,19 @@
 #' @param tipos Vetor com quantidades de cônicas para cada tipo (nomes são tipos)
 #'
 #' @return Tibble com as cônicas escolhidas
+#' @importFrom purrr map2_dfr
+#' @importFrom dplyr slice_head
 #' @export
 #'
 filtrar_conicas <- function(
   conicas,
   n = 48,
   tipos = c(
-      'elipse' = n/6,
-      'hipérbole' = n/6,
-      'parábola' = n/6,
-      'paralelas' = n/4,
-      'concorrentes' = n/4
+      'elipse' = ceiling(n/6),
+      'hipérbole' = ceiling(n/6),
+      'parábola' = ceiling(n/6),
+      'paralelas' = ceiling(n/4),
+      'concorrentes' = ceiling(n/4)
   ),
   seed = NULL
 ) {
@@ -28,6 +30,7 @@ filtrar_conicas <- function(
     qtdes_desejadas,
     tipos_desejados,
     ~sortear_conicas_um_tipo(conicas, .x, .y, seed)
-  )
+  ) %>%
+    dplyr::slice_head(n = n)
 
 }

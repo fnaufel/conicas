@@ -6,6 +6,7 @@
 #' @param seed Para gerador de números aleatórios
 #'
 #' @return Tibble com linhas sorteadas
+#' @importFrom dplyr filter slice_sample
 #'
 sortear_conicas_um_tipo <- function(df, n_itens, tipo_desejado, seed = NULL) {
 

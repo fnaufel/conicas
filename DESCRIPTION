@@ -1,21 +1,12 @@
 Package: conicas
 Title: Gerar equações de cônicas de diversos tipos
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Fernando",
-           family = "Naufel",
-           role = c("aut", "cre"),
-           email = "fnaufel@gmail.com")
+Authors@R: person(given = "Fernando", family = "Naufel", role = c("aut",
+        "cre"), email = "fnaufel@gmail.com")
 Description: Gerar equações de cônicas de diversos tipos.
 License: GPL (>= 3)
-Imports: 
-    dplyr,
-    glue,
-    magrittr,
-    purrr,
-    stringr,
-    tidyr
+Imports: dplyr,purrr,tidyr,glue,stringr
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

@@ -16,6 +16,8 @@
 #' @export
 #'
 #' @importFrom magrittr %>%
+#' @importFrom tidyr expand_grid
+#' @importFrom dplyr filter mutate
 #'
 gerar_conicas_df <- function(faixa = -5:5) {
 

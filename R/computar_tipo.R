@@ -46,7 +46,10 @@ computar_tipo <- function(A, C, D, E, F, lambda, mu1, mu2) {
     if (A * E < 0) {
       retval <- 'parábola'
     } else if (A * E > 0) {
-      retval <- 'vazio'
+      # Here the book had 'empty set', but the right type is 'parabola',
+      # as A and E are nonzero, and the only case where this would be the
+      # empty set is if E were zero.
+      retval <- 'parábola'
     } else {
       if (A * mu1 >= 0) {
         if (4 * F == D^2) {
@@ -64,7 +67,10 @@ computar_tipo <- function(A, C, D, E, F, lambda, mu1, mu2) {
     if (C * D < 0) {
       retval <- 'parábola'
     } else if (C * D > 0) {
-      retval <- 'vazio'
+      # Here the book had 'empty set', but the right type is 'parabola',
+      # as C and D are nonzero, and the only case where this would be the
+      # empty set is if D were zero.
+      retval <- 'parábola'
     } else {
       if (C * mu2 >= 0) {
         if (4 * F == E^2) {
